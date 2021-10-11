@@ -1,0 +1,588 @@
+@import "./index.scss";
+
+$something: rgba(149, 48, 196, 0.308);
+
+html {
+  nav {
+    font-size: 20px;
+  }
+}
+
+#gridsystem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 500px;
+  border: 1px solid #fff;
+}
+
+.span-atk {
+  position: relative;
+  color: rgb(197, 41, 41);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.span-crit {
+  position: relative;
+  color: rgb(199, 118, 71);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.span-hit {
+  position: relative;
+  color: rgb(173, 204, 60);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.span-hp {
+  position: relative;
+  color: rgb(86, 185, 66);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.span-def {
+  position: relative;
+  color: rgb(65, 91, 173);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.span-eva {
+  position: relative;
+  color: rgb(136, 73, 165);
+  bottom: 7px;
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.SkillTitle {
+  font-size: 1px;
+  color: #6fba82;
+}
+
+#col-title {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: aqua;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#col-left {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: aqua;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+#col-middle {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: aqua;
+  text-align: center;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+#col-right {
+    margin-right: 1.5px;
+    margin-bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: $something;
+    box-shadow: 0px 0px 1px 1px;
+  }
+
+#col-left {
+  background-color: rgba(0, 0, 0, 0.76);
+  text-align: center;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  height: 700px;
+  color: $something;
+  box-shadow: 0px 0px 1px 1px;
+}
+
+#col-stats-defensive {
+  background-color: rgba(0, 0, 0, 0.76);
+  margin-right: 3px;
+  margin-bottom: 3px;
+  color: $something;
+  box-shadow: 0px 0px 1px 1px;
+}
+#col-stats-offensive {
+  background-color: rgba(0, 0, 0, 0.76);
+  margin-right: 3px;
+  margin-bottom: 3px;
+  color: $something;
+  box-shadow: 0px 0px 1px 1px;
+}
+
+
+
+#col_skill1 {
+    color: $something;
+    box-shadow: 0px 0px 1px 1px;
+  margin-right: 1.5px;
+  margin-bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+#col_skill2 {
+    color: $something;
+    box-shadow: 0px 0px 1px 1px;
+  margin-left: 1.5px;
+  margin-bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+#col_skill3 {
+    color: $something;
+    box-shadow: 0px 0px 1px 1px;
+  margin-right: 1.5px;
+  margin-bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+#col_skill4 {
+    color: $something;
+    box-shadow: 0px 0px 1px 1px;
+  margin-left: 1.5px;
+  margin-bottom: 3px;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+#grid1 {
+  position: relative;
+  top: 10%;
+  font-size: 24px;
+}
+
+#grid2 {
+  position: relative;
+  top: 10%;
+  font-size: 24px;
+}
+
+#grid3 {
+  position: relative;
+  top: 10%;
+  font-size: 24px;
+}
+
+#col-title {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+#col-title:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 25s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#BasicAttackName {
+  color: rgb(255, 148, 172);
+}
+
+#PassiveSkillName {
+  color: rgb(255, 148, 172);
+}
+
+#SpecialSkillName {
+  color: rgb(255, 148, 172);
+}
+
+#UltimateSkillName {
+  color: rgb(255, 148, 172);
+}
+
+#BasicSkillTitle {
+  color: rgb(55, 192, 255);
+}
+
+#PassiveSkillTitle {
+  color: rgb(255, 212, 71);
+}
+
+#SpecialSkillTitle {
+  color: rgb(55, 192, 255);
+}
+
+#UltimateSkillTitle {
+  color: rgb(183, 0, 255);
+}
+
+#BasicSkillDesc {
+  color: white;
+  padding: 2.5%;
+}
+
+#PassiveSkillDesc {
+  color: white;
+  padding: 2.5%;
+}
+
+#SpecialSkillDesc {
+  color: white;
+  padding: 2.5%;
+}
+
+#UltimateSkillDesc {
+  color: white;
+  padding: 2.5%;
+}
+
+.Rank2Title,
+.Rank3Title,
+.Rank4Title,
+.Rank5Title {
+  color: #000;
+  border-radius: 10px;
+  background-color: #ffffffb3;
+  display: block;
+  width: 85px;
+  text-align: center;
+  font-weight: bold;
+  height: 30px;
+  position: relative;
+  left: 0%;
+}
+
+#Rank2Basic,
+#Rank3Basic,
+#Rank4Basic,
+#Rank5Basic {
+  color: white;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Rank2Passive,
+#Rank3Passive,
+#Rank4Passive,
+#Rank5Passive {
+  color: white;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Rank2Special,
+#Rank3Special,
+#Rank4Special,
+#Rank5Special {
+  color: white;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Rank2Ultimate,
+#Rank3Ultimate,
+#Rank4Ultimate,
+#Rank5Ultimate {
+  color: white;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rank-holder {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+/* here comes import of progress bar CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
+
+/* Basic resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.div_bar {
+  font-family: "Expletus Sans", sans-serif;
+  width: 100%;
+  max-width: 642px;
+  height: auto;
+  max-height: 575px;
+  position: relative;
+  z-index: 1;
+}
+
+.ulchar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.li_bar {
+  width: 100%;
+  float: right;
+  list-style-type: none;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 1.333%;
+  padding-bottom: 0;
+  left: -2%;
+  position: relative;
+}
+
+.h2_title {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0.25em;
+  color: #09c;
+  position: relative;
+}
+
+.p_atk {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  padding: 0rem;
+  height: 1%;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.p_crit {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.p_hit {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.p_hp {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  margin-top: 22px;
+  height: 1%;
+}
+
+.p_def {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.p_eva {
+  color: rgb(255, 211, 117);
+  z-index: 1;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.p_offensive {
+  color: rgb(255, 211, 117);
+  z-index: 2;
+  margin-top: 22px;
+}
+
+/* Styling an indeterminate progress bar */
+
+/* progress:not(value) { <-- I added this comment line */
+
+/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+
+/*} <-- I added this comment line */
+
+/* Styling the determinate progress element */
+
+progress[value] {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(102, 102, 102, 0.205);
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  color: royalblue;
+  position: relative;
+  margin: -10px 0px 0.5em;
+}
+
+/*
+        Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+        -webkit-progress-bar -> To style the progress element container
+        -webkit-progress-value -> To style the progress element value.
+        */
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(102, 102, 102, 0.205);
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  position: relative;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes {
+  100% {
+    background-position: -100px 0;
+  }
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+  /* Gradient background with Stripes */
+  background-image: -moz-linear-gradient(
+      135deg,
+      transparent,
+      transparent 100%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 100%
+    ),
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -moz-linear-gradient(left, #09c, #f44);
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  border-radius: 3px;
+  /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+
+/* Fallback technique styles */
+
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+  /* Dimensions should be similar to the parent progress element. */
+  width: 100%;
+  height: 20px;
+}
+
+.progress-bar span {
+  background-color: royalblue;
+  border-radius: 3px;
+  display: block;
+  text-indent: -9999px;
+}
+
+p[data-value] {
+  position: absolute;
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+p[data-value]:after {
+  content: attr(data-value) "";
+  position: absolute;
+  right: 0;
+}
+
+.atkbar::-webkit-progress-value,
+.critbar::-webkit-progress-value,
+.hitbar::-webkit-progress-value {
+  /* Gradient background with Stripes */
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 100%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 100%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #f44);
+}
+
+.hpbar::-webkit-progress-value,
+.defbar::-webkit-progress-value,
+.evabar::-webkit-progress-value {
+  /* Gradient background with Stripes */
+  background-image: -webkit-linear-gradient(
+      135deg,
+      transparent,
+      transparent 100%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 100%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #09c, #f44);
+}
+
+/* Now we are good to duplicate html code for other skills and then add the css code for the new skill based on data-skill */
+
+/* THE END */
+
+/* here ends import of progress bar CSS */

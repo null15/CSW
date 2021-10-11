@@ -1,0 +1,365 @@
+{
+    "Yoo Mina" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5683,
+            "Critical": 1159,
+            "Hit": 850,
+
+            "Health": 31658,
+            "Defense": 430,
+            "Evasion": 138,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Hilde" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Joo Shiyoon" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Seo Yoon" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Eujin" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Xiao Lin" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ],
+
+    "Kim Sobin" :
+    [
+        {
+            "Name": "Yoo Mina",
+            "Rarity": "SR",
+            "Affiliation": "Counter",
+            "Faction": "Fenrir Squad",
+            "Role": "Ranger",
+            "Type": "Ground",
+            "Target": "Ground & Air",
+            "Cost": 4,
+
+            "Attack": 5551,
+            "Critical": 1114,
+            "Hit": 817,
+
+            "Health": 31252,
+            "Defense": 413,
+            "Evasion": 132,
+
+            "BasicSkillName": "Basic Attack",
+            "PassiveSkillName": "Experienced Rookie",
+            "SpecialSkillName": "Pulse Revolver",
+            "UltimateSkillName": "Wolvesbane",
+
+            "BasicSkillDesc": "Fires a gun at a target. Last attacks inflict AoE damage around the target.",
+            "PassiveSkillDesc": "Displays non-rookie power in spite of herself. Increases CRIT DMG by 15%.",
+            "SpecialSkillDesc": "Fires high-powered energy, inflicting AoE damage.",
+            "UltimateSkillDesc": "Draws out the sword housed inside her gun and shoots a massive spirit sword to the front, inflicting AoE damage.",
+
+            "Rank2Basic": "Basic Attack Damage +5%",
+            "Rank3Basic": "Basic Attack Damage +5%",
+            "Rank4Basic": "Basic Attack Damage +5%",
+            "Rank5Basic": "Basic Attack Damage +5%",
+
+            "Rank2Passive": "CRIT DMG +5%",
+            "Rank3Passive": "CRIT DMG +5%",
+            "Rank4Passive": "CRIT DMG +5%",
+            "Rank5Passive": "CRIT DMG +20%",
+
+            "Rank2Special": "DMG +5%",
+            "Rank3Special": "DMG +5%",
+            "Rank4Special": "DMG +15%",
+            "Rank5Special": "Valid Hits +1",
+
+            "Rank2Ultimate": "DMG +5%",
+            "Rank3Ultimate": "DMG +5%",
+            "Rank4Ultimate": "DMG +15%",
+            "Rank5Ultimate": "ATK +10% after skill and until death"
+        }
+    ]
+} 

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="../../fontawesome/css/all.css" rel="stylesheet" />
+
+    <link href="../../styles/index.css" rel="stylesheet" />
+
+    <link href="../../styles/character-styles.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../script/counterside-player.js"></script>
+
+    <link rel="stylesheet" href="../../styles/counterside-player.css" />
+    <script src="../../script/dynamic-load.js" defer></script>
+
+    <title>Yoo Mina</title>
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="brand">
+        <a href="../../pages/index.html" class="nounderline"
+          >Counter:<span>Side</span> Wiki</a
+        >
+      </h2>
+      <ul>
+        <li>
+          <a href="../../pages/characters.html" class="nounderline"
+            >Characters</a
+          >
+        </li>
+        <li><a href="#" class="nounderline">Services</a></li>
+        <li><a href="#" class="nounderline">About</a></li>
+        <li><a href="#" class="nounderline">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md" id="col-title">
+            <h1>Yoo Mina</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md" id="col-left">
+            <div id="player-container"></div>
+          </div>
+          <div class="col-md" id="col-right">
+            <p>Right</p>
+            <p>And then content here</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- stats -->
+
+      <div class="container-md" id="grid1">
+        <div class="row">
+          <div class="col-xxl" id="col-stats-offensive">
+              <ul class="ulchar">
+                <li class="li_bar">
+                  <h2 class="h2_title">Offensive</h2>
+                  <!-- Atk bar -->
+                  <p class="p_atk" style="width: 0%" data-value="1"></p>
+                  <span class="span-atk">ATK</span>
+                  <progress max="1" value="1" class="atkbar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                  <!-- Crit bar -->
+                  <p class="p_crit" style="width: 0%" data-value="1"></p>
+                  <span class="span-crit">CRIT</span>
+                  <progress max="1" value="1" class="critbar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                  <!-- Hit bar -->
+                  <p class="p_hit" style="width: 0%" data-value="1"></p>
+                  <span class="span-hit">HIT</span>
+                  <progress max="1" value="1" class="hitbar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                </li>
+              </ul>
+          </div>
+          <div class="col-xxl" id="col-stats-defensive">
+            <div id="div_bar">
+              <ul class="ulchar">
+                <li class="li_bar">
+                  <h2 class="h2_title">Defensive</h2>
+                  <!-- Hpbar -->
+                  <p class="p_hp" style="width: 0%" data-value="1"></p>
+                  <span class="span-hp">HP</span>
+                  <progress max="1" value="1" class="hpbar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                  <!-- Defbar -->
+                  <p class="p_def" style="width: 0%" data-value="1"></p>
+                  <span class="span-def">DEF</span>
+                  <progress max="1" value="1" class="defbar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                  <!-- Evabar -->
+                  <p class="p_eva" style="width: 0%" data-value="1"></p>
+                  <span class="span-eva">EVA</span>
+                  <progress max="1" value="1" class="evabar">
+                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                  </progress>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- stats -->
+
+      <div class="container-md" id="grid2">
+        <div class="row">
+          <div class="col-md" id="col_skill1">
+            <h1 id="BasicAttackName">‎</h1>
+            <h2 id="BasicSkillTitle">Basic Skill</h2>
+            <h3 id="BasicSkillDesc">‎</h3>
+            <h4>
+              <span class="Rank2Title">Rank 2</span
+              ><span id="Rank2Basic"></span>
+            </h4>
+            <h4>
+              <span class="Rank3Title">Rank 3</span
+              ><span id="Rank3Basic"></span>
+            </h4>
+            <h4>
+              <span class="Rank4Title">Rank 4</span
+              ><span id="Rank4Basic"></span>
+            </h4>
+            <h4>
+              <span class="Rank5Title">Rank 5</span
+              ><span id="Rank5Basic"></span>
+            </h4>
+          </div>
+
+          <div class="col-md" id="col_skill2">
+            <h1 id="PassiveSkillName">‎</h1>
+            <h2 id="PassiveSkillTitle">Passive Skill</h2>
+            <h3 id="PassiveSkillDesc">‎</h3>
+
+            <h4>
+              <span class="Rank2Title">Rank 2</span
+              ><span id="Rank2Passive"></span>
+            </h4>
+            <h4>
+              <span class="Rank3Title">Rank 3</span
+              ><span id="Rank3Passive"></span>
+            </h4>
+            <h4>
+              <span class="Rank4Title">Rank 4</span
+              ><span id="Rank4Passive"></span>
+            </h4>
+            <h4>
+              <span class="Rank5Title">Rank 5</span
+              ><span id="Rank5Passive"></span>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-md" id="grid3">
+        <div class="row">
+          <div class="col-md" id="col_skill3">
+            <h1 id="SpecialSkillName">‎</h1>
+            <h2 id="SpecialSkillTitle">Special Skill</h2>
+            <h3 id="SpecialSkillDesc">‎</h3>
+            <h4>
+              <span class="Rank2Title">Rank 2</span
+              ><span id="Rank2Special"></span>
+            </h4>
+            <h4>
+              <span class="Rank3Title">Rank 3</span
+              ><span id="Rank3Special"></span>
+            </h4>
+            <h4>
+              <span class="Rank4Title">Rank 4</span
+              ><span id="Rank4Special"></span>
+            </h4>
+            <h4>
+              <span class="Rank5Title">Rank 5</span
+              ><span id="Rank5Special"></span>
+            </h4>
+          </div>
+          <div class="col-md" id="col_skill4">
+            <h1 id="UltimateSkillName">‎</h1>
+            <h2 id="UltimateSkillTitle">Ultimate Skill</h2>
+            <h3 id="UltimateSkillDesc">‎</h3>
+
+            <h4>
+              <span class="Rank2Title">Rank 2</span
+              ><span id="Rank2Ultimate"></span>
+            </h4>
+            <h4>
+              <span class="Rank3Title">Rank 3</span
+              ><span id="Rank3Ultimate"></span>
+            </h4>
+            <h4>
+              <span class="Rank4Title">Rank 4</span
+              ><span id="Rank4Ultimate"></span>
+            </h4>
+            <h4>
+              <span class="Rank5Title">Rank 5</span
+              ><span id="Rank5Ultimate"></span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-center text-white fixed-bottom"
+      style="background-color: #21081a"
+    >
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Zlongame</a>
+      </div>
+    </footer>
+
+    <script>
+      new counterside.countersidePlayer("player-container", {
+        jsonUrl: "../../assets/YooMina/UNIT_ILLUST_YOO_MI_NA.json",
+        atlasUrl: "../../assets/YooMina/UNIT_ILLUST_YOO_MI_NA.atlas",
+        alpha: true,
+        backgroundColor: "#00000000",
+        premultipliedAlpha: true,
+        animation: "IDLE"
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
