@@ -44,7 +44,7 @@ let Rank5AddUltimate = document.getElementById("Rank5Ultimate");
 
 $( document ).ready(function() {
 
-    fetch("../../data/chars.json")
+    fetch("../data/chars.json")
     .then(function(resp) {
         return resp.json();
     })

@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 body {
   background-color: rgba(0, 0, 0, 0.678);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("https://counterside.zlongame.com/img/page5/pic6.jpg") center no-repeat fixed;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://counterside.zlongame.com/img/page5/pic6.jpg") center no-repeat fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../assets/images/bg.jpg") center no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../assets/images/bg.jpg") center no-repeat fixed;
   background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   /*Sätter teckensnitt för bodyn*/
