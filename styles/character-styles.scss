@@ -22,6 +22,10 @@ p {
   margin-bottom: 0px;
 }
 
+.container-md {
+  max-width: 98%;
+}
+
 #pagetitle {
   text-shadow: -1px 1px 10px #b834f5;
 }
@@ -50,7 +54,7 @@ p {
   margin-left: -11px;
 }
 
-#datagrid > p {
+#datagrid>p {
   font-size: 20px;
   text-align: center;
   text-shadow: 0 0 15px #2c99cc;
@@ -64,24 +68,21 @@ p {
   overflow: scroll;
   overflow-x: hidden;
 
-  
+
 }
 
-#biography::-webkit-scrollbar-track
-{
-	border: 1px solid black;
-	background-color: #4d31448e;
+#biography::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #4d31448e;
 }
 
-#biography::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #4d31448e;
+#biography::-webkit-scrollbar {
+  width: 10px;
+  background-color: #4d31448e;
 }
 
-#biography::-webkit-scrollbar-thumb
-{
-	background-color: #385355;	
+#biography::-webkit-scrollbar-thumb {
+  background-color: #385355;
 }
 
 #divider {
@@ -109,7 +110,8 @@ p {
   gap: 16px;
   padding-bottom: 10px;
 }
-#skinbuttons > input {
+
+#skinbuttons>input {
   width: 100%;
   height: 100%;
   border-radius: 20%;
@@ -119,7 +121,7 @@ p {
   overflow: scroll
 }
 
-#skinbuttons > input:hover {
+#skinbuttons>input:hover {
   color: #07b39b;
 }
 
@@ -135,6 +137,7 @@ p {
   width: 50%;
   background-color: #461d35;
   color: #67ffeb;
+
   &:hover {
     background-color: #10405a;
   }
@@ -145,6 +148,7 @@ p {
   width: 80%;
   background-color: #2e292c;
   color: #67ffeb;
+
   &:hover {
     background-color: #1d1f20;
   }
@@ -253,14 +257,14 @@ p {
 #col-right {
   background-color: rgba(0, 0, 0, 0.76);
   box-shadow: inset #783641 0px 0px 7px 2px;
-  height: 750px;
+  height: 765px;
   margin: 7px;
 }
 
 #col-left {
   background-color: rgba(0, 0, 0, 0.76);
   text-align: center;
-  height: 750px;
+  height: 765px;
   box-shadow: inset #783641 0px 0px 7px 2px;
   background-color: rgba(0, 0, 0, 0.76);
   margin: 7px;
@@ -282,26 +286,26 @@ p {
 
 #col_skill1 {
   background-color: rgba(0, 0, 0, 0.76);
-margin: 7px;
-box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill2 {
   background-color: rgba(0, 0, 0, 0.76);
-margin: 7px;
-box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill3 {
   background-color: rgba(0, 0, 0, 0.76);
-margin: 7px;
-box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill4 {
   background-color: rgba(0, 0, 0, 0.76);
-margin: 7px;
-box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #grid1 {
@@ -785,21 +789,9 @@ p[data-value]:after {
 
 /* here ends import of progress bar CSS */
 
-@media screen and (max-width: 1000px) {
-  #skinbuttons {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 70px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  #skinbuttons {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 85px;
-  }
-}
 
 @media screen and (max-width: 1300px) {
+
   .Rank2Title,
   .Rank3Title,
   .Rank4Title,
@@ -810,10 +802,21 @@ p[data-value]:after {
   }
 }
 
-@media screen and (max-width: 366px) {
-  #col-right {
-    margin: 0px;
-    height: 845px;
+@media screen and (max-width: 1240px) {
+  main {
+    width: 100%;
+  }
+
+  .container-md {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  #skinbuttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 70px;
   }
 }
 
@@ -822,44 +825,48 @@ p[data-value]:after {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 195px;
   }
+
   #col-right {
     margin: 0px;
     height: 815px;
   }
-  
+
   #col-left {
     margin: 0px;
   }
-  
+
   #col-stats-defensive {
     margin: 0px;
     margin-top: 5px;
   }
-  
+
   #col-stats-offensive {
     margin: 0px;
     margin-top: 5px;
   }
+
   #col_skill1 {
-  margin: 0px;
-  margin-top: 5px;
+    margin: 0px;
+    margin-top: 5px;
   }
-  
+
   #col_skill2 {
-  margin: 0px;
-  margin-top: 5px;
+    margin: 0px;
+    margin-top: 5px;
   }
-  
+
   #col_skill3 {
-  margin: 0px;
-  margin-top: 5px;
+    margin: 0px;
+    margin-top: 5px;
   }
-  
+
   #col_skill4 {
-  margin: 0px;
-  margin-top: 5px;
+    margin: 0px;
+    margin-top: 5px;
   }
 }
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -876,7 +883,7 @@ p[data-value]:after {
   .SkillImage {
     width: 70px;
     height: 70px;
-    margin-right:10px;
+    margin-right: 10px;
   }
 
   #BasicAttackName {
@@ -962,5 +969,22 @@ p[data-value]:after {
   #Rank4Ultimate,
   #Rank5Ultimate {
     font-size: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #skinbuttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 85px;
+  }
+}
+
+
+@media screen and (max-width: 366px) {
+  #col-right {
+    margin: 0px;
+    height: 845px;
   }
 }
