@@ -7,12 +7,13 @@ body {
   background-color: rgba(0, 0, 0, 0.678);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("../assets/images/bg.jpg") center no-repeat fixed;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../assets/images/bg.jpg") center no-repeat fixed;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
   background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   /*Sätter teckensnitt för bodyn*/
   margin-bottom: 60px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 main {
