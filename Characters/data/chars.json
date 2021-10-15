@@ -4,11 +4,11 @@
         {
             "Name": "Yoo Mina",
             "Rarity": "SR",
-            "Affiliation": "Counter",
+            "Movement": "Ground",
             "Faction": "Fenrir Squad",
-            "Role": "Ranger",
-            "Type": "Ground",
             "Target": "Ground & Air",
+            "Type": "Counter",
+            "Role": "Ranger",
             "Cost": 4,
 
             "Attack": 5683,

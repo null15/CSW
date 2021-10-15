@@ -17,9 +17,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="../../fontawesome/css/all.css" rel="stylesheet" />
-
-    <link href="../../styles/index.css" rel="stylesheet" />
+    <link href="../../assets/fontawesome/css/all.css" rel="stylesheet" />
 
     <link href="../../styles/character-styles.css" rel="stylesheet" />
 
@@ -32,16 +30,86 @@
     <link rel="stylesheet" href="../../styles/counterside-player.css" />
     <script src="../../script/dynamic-load.js" defer></script>
 
+    <!-- Change1 -->
     <title>Yoo Mina</title>
+    <!-- Change1 -->
+
+
+    <script>
+      // Change2
+
+      let y = 0; // This is for sprite
+      let pid = "Yoo Mina"; // for infography, stats & skills
+      let uid = "SI_COLLECTION_UNIT_INTRO_NKM_UNIT_C_YOO_MI_NA"; // for biography
+
+      // fx cut-in
+
+      let fx0_json = "../../assets/" + pid + "/FX_SKILL_CUTIN_NKM_UNIT_C_YOO_MI_NA_SUMMER.json";
+      let fx0_atlas = "../../assets/" + pid + "/FX_SKILL_CUTIN_NKM_UNIT_C_YOO_MI_NA_SUMMER.atlas";
+
+      // Sprites, 0 is original and other numbers are skin
+
+      let sprite0_json = "../../assets/" + pid + "/UNIT_C_YOO_MI_NA.json";
+      let sprite0_atlas = "../../assets/" + pid + "/UNIT_C_YOO_MI_NA.atlas";
+
+      // sprite 1
+
+      let sprite1_json =
+        "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_WINTER.json";
+      let sprite1_atlas =
+        "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_WINTER.atlas";
+
+      // sprite 2
+
+      let sprite2_json = "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_VALEN.json";
+      let sprite2_atlas =
+        "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_VALEN.atlas";
+
+      //sprite 3
+
+      let sprite3_json =
+        "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_SUMMER.json";
+      let sprite3_atlas =
+        "../../assets/" + pid + "/UNIT_C_YOO_MI_NA_SUMMER.atlas";
+
+      // Skins, 0 is original and other numbers are skin
+
+      let skin0_json = "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA.json";
+      let skin0_atlas =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA.atlas";
+
+      // skin 1
+
+      let skin1_json =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_WINTER.json";
+      let skin1_atlas =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_WINTER.atlas";
+
+      // skin 2
+
+      let skin2_json =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_VALEN.json";
+      let skin2_atlas =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_VALEN.atlas";
+
+      // skin 3
+
+      let skin3_json =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_SUMMER.json";
+      let skin3_atlas =
+        "../../assets/" + pid + "/UNIT_ILLUST_C_YOO_MI_NA_SUMMER.atlas";
+
+      // Change2
+    </script>
   </head>
 
   <body>
     <nav>
-      <h2 class="brand">
-        <a href="../../pages/index.html" class="nounderline"
+      <p class="brand">
+        <a href="../../index.html" class="nounderline"
           >Counter:<span>Side</span> Wiki</a
         >
-      </h2>
+      </p>
       <ul>
         <li>
           <a href="../../pages/characters.html" class="nounderline"
@@ -58,7 +126,9 @@
       <div class="container-md">
         <div class="row">
           <div class="col-md" id="col-title">
-            <h1>Yoo Mina</h1>
+            <!-- Change3 -->
+            <h1 id="pagetitle">Yoo Mina</h1>
+            <!-- Change3 -->
           </div>
         </div>
       </div>
@@ -69,8 +139,50 @@
             <div id="player-container"></div>
           </div>
           <div class="col-md" id="col-right">
-            <p>Right</p>
-            <p>And then content here</p>
+            <div id="rarityimg">
+              <img src="../../index.html" alt="image of rarity" id="Rarity" />
+            </div>
+
+            <div id="datagrid">
+              <p>Movement</p>
+              <p id="Movement"></p>
+              <p>Faction</p>
+              <p id="Faction"></p>
+              <p>Target</p>
+              <p id="Target"></p>
+              <p>Type</p>
+              <p id="Type"></p>
+              <p>Role</p>
+              <p id="Role"></p>
+              <p>Cost</p>
+              <p id="Cost"></p>
+            </div>
+
+            <div id="biography"></div>
+
+            <img
+              id="divider"
+              src="../../assets/images/divider.png"
+              alt="Divider image"
+            />
+
+            <p id="skintitle">Skins</p>
+
+            <!-- Change4 -->
+
+            <div id="skinbuttons">
+              <input type="image" value="skin0" id="skin0" src="./" />
+              <input type="image" value="skin1" id="skin1" src="./" />
+              <input type="image" value="skin2" id="skin2" src="./" />
+              <input type="image" value="skin3" id="skin3" src="./" />
+            </div>
+
+            <!-- Change4 -->
+
+            <div id="spritebuttons">
+              <input type="button" value="sprite" id="sprite" />
+              <input type="button" value="fx" id="fx" />
+            </div>
           </div>
         </div>
       </div>
@@ -79,57 +191,55 @@
 
       <div class="container-md" id="grid1">
         <div class="row">
-          <div class="col-xxl" id="col-stats-offensive">
-              <ul class="ulchar">
-                <li class="li_bar">
-                  <h2 class="h2_title">Offensive</h2>
-                  <!-- Atk bar -->
-                  <p class="p_atk" style="width: 0%" data-value="1"></p>
-                  <span class="span-atk">ATK</span>
-                  <progress max="1" value="1" class="atkbar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                  <!-- Crit bar -->
-                  <p class="p_crit" style="width: 0%" data-value="1"></p>
-                  <span class="span-crit">CRIT</span>
-                  <progress max="1" value="1" class="critbar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                  <!-- Hit bar -->
-                  <p class="p_hit" style="width: 0%" data-value="1"></p>
-                  <span class="span-hit">HIT</span>
-                  <progress max="1" value="1" class="hitbar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                </li>
-              </ul>
+          <div class="col-md" id="col-stats-offensive">
+            <ul class="ulchar">
+              <li class="li_bar">
+                <p id="p_title1">Offensive</p>
+                <!-- Atk bar -->
+                <p class="p_atk" style="width: 0%" data-value="1"></p>
+                <span class="span-atk">ATK</span>
+                <progress max="1" value="1" class="atkbar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+                <!-- Crit bar -->
+                <p class="p_crit" style="width: 0%" data-value="1"></p>
+                <span class="span-crit">CRIT</span>
+                <progress max="1" value="1" class="critbar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+                <!-- Hit bar -->
+                <p class="p_hit" style="width: 0%" data-value="1"></p>
+                <span class="span-hit">HIT</span>
+                <progress max="1" value="1" class="hitbar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+              </li>
+            </ul>
           </div>
-          <div class="col-xxl" id="col-stats-defensive">
-            <div id="div_bar">
-              <ul class="ulchar">
-                <li class="li_bar">
-                  <h2 class="h2_title">Defensive</h2>
-                  <!-- Hpbar -->
-                  <p class="p_hp" style="width: 0%" data-value="1"></p>
-                  <span class="span-hp">HP</span>
-                  <progress max="1" value="1" class="hpbar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                  <!-- Defbar -->
-                  <p class="p_def" style="width: 0%" data-value="1"></p>
-                  <span class="span-def">DEF</span>
-                  <progress max="1" value="1" class="defbar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                  <!-- Evabar -->
-                  <p class="p_eva" style="width: 0%" data-value="1"></p>
-                  <span class="span-eva">EVA</span>
-                  <progress max="1" value="1" class="evabar">
-                    <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
-                  </progress>
-                </li>
-              </ul>
-            </div>
+          <div class="col-md" id="col-stats-defensive">
+            <ul class="ulchar">
+              <li class="li_bar">
+                <p id="p_title2">Defensive</p>
+                <!-- Hpbar -->
+                <p class="p_hp" style="width: 0%" data-value="1"></p>
+                <span class="span-hp">HP</span>
+                <progress max="1" value="1" class="hpbar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+                <!-- Defbar -->
+                <p class="p_def" style="width: 0%" data-value="1"></p>
+                <span class="span-def">DEF</span>
+                <progress max="1" value="1" class="defbar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+                <!-- Evabar -->
+                <p class="p_eva" style="width: 0%" data-value="1"></p>
+                <span class="span-eva">EVA</span>
+                <progress max="1" value="1" class="evabar">
+                  <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                </progress>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -139,48 +249,64 @@
       <div class="container-md" id="grid2">
         <div class="row">
           <div class="col-md" id="col_skill1">
-            <h1 id="BasicAttackName">‎</h1>
-            <h2 id="BasicSkillTitle">Basic Skill</h2>
-            <h3 id="BasicSkillDesc">‎</h3>
-            <h4>
-              <span class="Rank2Title">Rank 2</span
-              ><span id="Rank2Basic"></span>
-            </h4>
-            <h4>
-              <span class="Rank3Title">Rank 3</span
-              ><span id="Rank3Basic"></span>
-            </h4>
-            <h4>
+            <div class="skillintro">
+              <img
+                class="SkillImage"
+                id="SkillImage1"
+                src="./"
+                alt="Basic Attack Image"
+              />
+              <div class="skillintro2">
+                <p id="BasicAttackName"></p>
+                <p id="BasicSkillTitle">Basic Skill</p>
+              </div>
+            </div>
+
+            <p id="BasicSkillDesc"></p>
+
+            <div class="flexranks">
+              <span class="Rank2Title">Rank 2</span>
+              <span id="Rank2Basic"></span>
+
+              <span class="Rank3Title">Rank 3</span>
+              <span id="Rank3Basic"></span>
+
               <span class="Rank4Title">Rank 4</span
               ><span id="Rank4Basic"></span>
-            </h4>
-            <h4>
+
               <span class="Rank5Title">Rank 5</span
               ><span id="Rank5Basic"></span>
-            </h4>
+            </div>
           </div>
 
           <div class="col-md" id="col_skill2">
-            <h1 id="PassiveSkillName">‎</h1>
-            <h2 id="PassiveSkillTitle">Passive Skill</h2>
-            <h3 id="PassiveSkillDesc">‎</h3>
+            <div class="skillintro">
+              <img
+                class="SkillImage"
+                id="SkillImage2"
+                src="../../assets/Yoo Mina/NKM_UNIT_C_YOO_MINA_PASSIVE.png"
+                alt="Basic Attack Image"
+              />
+              <div class="skillintro2">
+                <p id="PassiveSkillName"></p>
+                <p id="PassiveSkillTitle">Passive Skill</p>
+              </div>
+            </div>
+            <p id="PassiveSkillDesc"></p>
 
-            <h4>
+            <div class="flexranks">
               <span class="Rank2Title">Rank 2</span
               ><span id="Rank2Passive"></span>
-            </h4>
-            <h4>
+
               <span class="Rank3Title">Rank 3</span
               ><span id="Rank3Passive"></span>
-            </h4>
-            <h4>
+
               <span class="Rank4Title">Rank 4</span
               ><span id="Rank4Passive"></span>
-            </h4>
-            <h4>
+
               <span class="Rank5Title">Rank 5</span
               ><span id="Rank5Passive"></span>
-            </h4>
+            </div>
           </div>
         </div>
       </div>
@@ -188,71 +314,289 @@
       <div class="container-md" id="grid3">
         <div class="row">
           <div class="col-md" id="col_skill3">
-            <h1 id="SpecialSkillName">‎</h1>
-            <h2 id="SpecialSkillTitle">Special Skill</h2>
-            <h3 id="SpecialSkillDesc">‎</h3>
-            <h4>
+            <div class="skillintro">
+              <img
+                class="SkillImage"
+                id="SkillImage3"
+                src="../../assets/Yoo Mina/NKM_UNIT_C_YOO_MINA_SKILL.png"
+                alt="Basic Attack Image"
+              />
+              <div class="skillintro2">
+                <p id="SpecialSkillName"></p>
+                <p id="SpecialSkillTitle">Special Skill</p>
+              </div>
+            </div>
+
+            <p id="SpecialSkillDesc"></p>
+            <div class="flexranks">
               <span class="Rank2Title">Rank 2</span
               ><span id="Rank2Special"></span>
-            </h4>
-            <h4>
+
               <span class="Rank3Title">Rank 3</span
               ><span id="Rank3Special"></span>
-            </h4>
-            <h4>
+
               <span class="Rank4Title">Rank 4</span
               ><span id="Rank4Special"></span>
-            </h4>
-            <h4>
+
               <span class="Rank5Title">Rank 5</span
               ><span id="Rank5Special"></span>
-            </h4>
+            </div>
           </div>
           <div class="col-md" id="col_skill4">
-            <h1 id="UltimateSkillName">‎</h1>
-            <h2 id="UltimateSkillTitle">Ultimate Skill</h2>
-            <h3 id="UltimateSkillDesc">‎</h3>
+            <div class="skillintro">
+              <img
+                class="SkillImage"
+                id="SkillImage4"
+                src="../../assets/Yoo Mina/NKM_UNIT_C_YOO_MINA_HYPER.png"
+                alt="Basic Attack Image"
+              />
+              <div class="skillintro2">
+                <p id="UltimateSkillName"></p>
+                <p id="UltimateSkillTitle">Ultimate Skill</p>
+              </div>
+            </div>
 
-            <h4>
+            <p id="UltimateSkillDesc">‎</p>
+
+            <div class="flexranks">
               <span class="Rank2Title">Rank 2</span
               ><span id="Rank2Ultimate"></span>
-            </h4>
-            <h4>
+
               <span class="Rank3Title">Rank 3</span
               ><span id="Rank3Ultimate"></span>
-            </h4>
-            <h4>
+
               <span class="Rank4Title">Rank 4</span
               ><span id="Rank4Ultimate"></span>
-            </h4>
-            <h4>
+
               <span class="Rank5Title">Rank 5</span
               ><span id="Rank5Ultimate"></span>
-            </h4>
+            </div>
           </div>
         </div>
       </div>
+
     </main>
 
-    <footer
-      class="text-center text-white fixed-bottom"
-      style="background-color: #21081a"
-    >
+    <footer class="text-center text-white" style="background-color: #21081a">
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">Zlongame</a>
+        <a class="text-white" href="https://counterside.zlongame.com/"
+          >Zlongame</a
+        >
       </div>
     </footer>
 
     <script>
+      const refreshPlayer = document.getElementById("player-container");
+
+      const skin0 = document.getElementById("skin0");
+      const skin1 = document.getElementById("skin1");
+      const skin2 = document.getElementById("skin2");
+      const skin3 = document.getElementById("skin3");
+
+      const fx = document.getElementById("fx");
+      const sprite = document.getElementById("sprite");
+
+      let skillicon1 = document.getElementById("SkillImage1");
+      let skillicon2 = document.getElementById("SkillImage2");
+      let skillicon3 = document.getElementById("SkillImage3");
+      let skillicon4 = document.getElementById("SkillImage4");
+
+      // Change5
+
+      skillicon1.src =
+        "../../assets/" + pid + "/NKM_UNIT_C_YOO_MINA_ATTACK.png"; // ATTACK
+      skillicon2.src =
+        "../../assets/" + pid + "/NKM_UNIT_C_YOO_MINA_PASSIVE.png"; // PASSIVE
+      skillicon3.src = "../../assets/" + pid + "/NKM_UNIT_C_YOO_MINA_SKILL.png"; // SKILL
+      skillicon4.src = "../../assets/" + pid + "/NKM_UNIT_C_YOO_MINA_HYPER.png"; // HYPER
+
+      skin0.src =
+        "../../assets/" + pid + "/AB_UNIT_FACE_CARD_NKM_UNIT_C_YOO_MI_NA.png"; // Base skin
+      skin1.src =
+        "../../assets/" +
+        pid +
+        "/AB_UNIT_FACE_CARD_NKM_UNIT_C_YOO_MI_NA_WINTER.png"; // Skin 1
+      skin2.src =
+        "../../assets/" +
+        pid +
+        "/AB_UNIT_FACE_CARD_NKM_UNIT_C_YOO_MI_NA_VALEN.png"; // Skin 2
+      skin3.src =
+        "../../assets/" +
+        pid +
+        "/AB_UNIT_FACE_CARD_NKM_UNIT_C_YOO_MI_NA_SUMMER.png"; // Skin3
+
+      
+
+      // Depending on how the skin appears on player, viewport may need to be changed as well.
+      fx.style.visibility = 'hidden';
+
       new counterside.countersidePlayer("player-container", {
-        jsonUrl: "../../assets/YooMina/UNIT_ILLUST_YOO_MI_NA.json",
-        atlasUrl: "../../assets/YooMina/UNIT_ILLUST_YOO_MI_NA.atlas",
+        jsonUrl: skin0_json,
+        atlasUrl: skin0_atlas,
         alpha: true,
         backgroundColor: "#00000000",
         premultipliedAlpha: true,
-        animation: "IDLE"
+        animation: "NOANI"
       });
+
+      fx.addEventListener("click", () => {
+        if (y === 3) {
+          refreshPlayer.innerHTML = "";
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: fx0_json,
+            atlasUrl: fx0_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "BASE",
+            viewport: {
+              x: -4000,
+              y: -3500,
+              width: 6500,
+              height: 6500,
+              padLeft: "0%",
+              padRight: "0%",
+              padTop: "0%",
+              padBottom: "15%",
+            },
+
+          })
+        } else {
+          refreshPlayer.innerHTML = "";
+            new counterside.countersidePlayer("player-container", {
+            jsonUrl: "There is no skill FX for this skin.",
+            atlasUrl: "There is no skill FX for this skin.",
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true
+          })
+        }
+      })
+
+      sprite.addEventListener("click", () => {
+        if (y === 0) {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: sprite0_json,
+            atlasUrl: sprite0_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "ASTAND"
+          });
+        } else if (y === 1) {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: sprite1_json,
+            atlasUrl: sprite1_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "ASTAND"
+          });
+        } else if (y === 2) {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: sprite2_json,
+            atlasUrl: sprite2_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "ASTAND"
+          });
+        } else if (y === 3) {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'visible';
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: sprite3_json,
+            atlasUrl: sprite3_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "ASTAND"
+          });
+        } else {
+          console.log("Error loading sprite.");
+        }
+      });
+
+      skin0.addEventListener("click", () => {
+        if (skin0.value === "skin0") {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          y = 0;
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: skin0_json,
+            atlasUrl: skin0_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "IDLE"
+          });
+        }
+      });
+      skin1.addEventListener("click", () => {
+        if (skin1.value === "skin1") {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          y = 1;
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: skin1_json,
+            atlasUrl: skin1_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "IDLE",
+          });
+        }
+      });
+      skin2.addEventListener("click", () => {
+        if (skin2.value === "skin2") {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'hidden';
+          y = 2;
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: skin2_json,
+            atlasUrl: skin2_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "IDLE",
+          });
+        }
+      });
+      skin3.addEventListener("click", () => {
+        if (skin3.value === "skin3") {
+          refreshPlayer.innerHTML = "";
+          fx.style.visibility = 'visible';
+          y = 3;
+          new counterside.countersidePlayer("player-container", {
+            jsonUrl: skin3_json,
+            atlasUrl: skin3_atlas,
+            alpha: true,
+            backgroundColor: "#00000000",
+            premultipliedAlpha: true,
+            animation: "IDLE",
+            viewport: {
+              x: -2000,
+              y: -3500,
+              width: 4500,
+              height: 4500,
+              padLeft: "0%",
+              padRight: "0%",
+              padTop: "0%",
+              padBottom: "25%",
+            },
+          });
+        }
+      });
+
+      // Change5
+
     </script>
 
     <script
