@@ -9,12 +9,12 @@
 
 
 #container_char {
-    top: 25%;
-    left: 0%;
-    width: 100%;
-    height: auto;
-	margin: 0;
-	padding: 0;
+    // top: 25%;
+    // left: 0%;
+    // width: 100%;
+    // height: auto;
+	// margin: 0;
+	// padding: 0;
 	font: 0/1 'Oswald', sans-serif;
 }
 
@@ -50,8 +50,10 @@ label {
 }
 
 label::before {
+	display: flex;
 	content: '';
-	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	position: absolute;
 	top: 10px;
 	left: 10px;
@@ -69,7 +71,6 @@ input:checked+label::before {
 	background-color: #c00;
 }
 
-
 /* width is controlled here and in media queries to ensure that there's always an even number of columns (prevents orphans) */
 
 .characters {
@@ -77,7 +78,7 @@ input:checked+label::before {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	width: 240px;
+	width: 100%;
 	list-style-type: none;
 	padding: 0;
 	padding-bottom: 20px;
@@ -109,8 +110,8 @@ input:checked+label::before {
 }
 
 .characters img {
-	width: 100px;
-	height: 100px;
+	width: 100%;
+	height: 100%;
 	border: 3px solid rgb(0, 0, 0);
 	border-radius: 35%;
 	box-shadow: 0 0 20px #000;
@@ -118,30 +119,52 @@ input:checked+label::before {
 	transform: scale(.5);
 }
 
+.char-title {
+	color: #fff;
+}
+
 label {
 	color: white;
 }
 
-#labelpos {
-	margin-left: 200px;
-}
-
-#all:checked~.characters [data-teams~="all"] h2,
+#all-type:checked~.characters [data-teams~="all-type"] h2,
 #counter:checked~.characters [data-teams~="counter"] h2,
 #soldier:checked~.characters [data-teams~="soldier"] h2,
 #mech:checked~.characters [data-teams~="mech"] h2,
-#awaken:checked~.characters [data-teams~="awaken"] h2 {
+#awaken:checked~.characters [data-teams~="awaken"] h2,
+#none-type:checked~.characters [data-teams~="none-type"] h2 {
 	display: block;
 }
 
-#all:checked~.characters [data-teams~="all"] img,
+#all-type:checked~.characters [data-teams~="all-type"] img,
 #counter:checked~.characters [data-teams~="counter"] img,
 #soldier:checked~.characters [data-teams~="soldier"] img,
 #mech:checked~.characters [data-teams~="mech"] img,
-#awaken:checked~.characters [data-teams~="awaken"] img {
+#awaken:checked~.characters [data-teams~="awaken"] img,
+#none-type:checked~.characters [data-teams~="none-type"] img {
 	animation: avatar .3s forwards;
 }
 
+#all-cost:checked~.characters [data-teams~="all-cost"] h2,
+#1:checked~.characters [data-teams~="1"] h2,
+#2:checked~.characters [data-teams~="2"] h2,
+#3:checked~.characters [data-teams~="3"] h2,
+#4:checked~.characters [data-teams~="4"] h2,
+#5:checked~.characters [data-teams~="5"] h2,
+#6:checked~.characters [data-teams~="6"] h2 {
+	display: block;
+}
+
+#all-cost:checked~.characters [data-teams~="all-cost"] img,
+#1:checked~.characters [data-teams~="1"] img,
+#2:checked~.characters [data-teams~="2"] img,
+#3:checked~.characters [data-teams~="3"] img,
+#4:checked~.characters [data-teams~="4"] img,
+#5:checked~.characters [data-teams~="5"] img,
+#6:checked~.characters [data-teams~="6"] img,
+#none-cost:checked~.characters [data-teams~="none-cost"] img {
+	animation: avatar .3s forwards;
+}
 
 /* fade in and expand image to full size, with a slight bounce */
 
@@ -156,25 +179,4 @@ label {
 	}
 }
 
-@media only screen and (min-width: 500px) {
-	.characters {
-		width: 480px;
-	}
-}
-
-@media only screen and (min-width: 740px) {
-	.characters {
-		width: 720px;
-	}
-	.char-title {
-		font-size: 60px;
-		color: #fff;
-	}
-}
-
-@media only screen and (min-width: 980px) {
-	.characters {
-		width: 960px;
-	}
-}
 

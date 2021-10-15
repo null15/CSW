@@ -4146,8 +4146,8 @@ var counterside = (() => {
       this.toLoad--;
       this.loaded++;
       this.errors[path] = message;
-      if (callback)
-        callback(path, message);
+      // if (callback) 
+      //   callback(path, message);
     }
     setRawDataURI(path, data) {
       this.downloader.rawDataUris[this.pathPrefix + path] = data;
@@ -4157,7 +4157,7 @@ var counterside = (() => {
       this.downloader.downloadBinary(path, (data) => {
         this.success(success, path, data);
       }, (status, responseText) => {
-        this.error(error, path, `Couldn't load binary ${path}: status ${status}, ${responseText}`);
+        this.error(`Couldn't load binary`);
       });
     }
     loadText(path, success = null, error = null) {
@@ -4165,7 +4165,7 @@ var counterside = (() => {
       this.downloader.downloadText(path, (data) => {
         this.success(success, path, data);
       }, (status, responseText) => {
-        this.error(error, path, `Couldn't load text ${path}: status ${status}, ${responseText}`);
+        this.error(`Couldn't load text`);
       });
     }
     loadJson(path, success = null, error = null) {
@@ -4173,7 +4173,7 @@ var counterside = (() => {
       this.downloader.downloadJson(path, (data) => {
         this.success(success, path, data);
       }, (status, responseText) => {
-        this.error(error, path, `Couldn't load JSON ${path}: status ${status}, ${responseText}`);
+        this.error(`Couldn't load JSON`);
       });
     }
     loadTexture(path, success = null, error = null) {
@@ -4184,7 +4184,7 @@ var counterside = (() => {
         fetch(path, { mode: "cors" }).then((response) => {
           if (response.ok)
             return response.blob();
-          this.error(error, path, `Couldn't load image: ${path}`);
+          this.error(`Couldn't load image`);
           return null;
         }).then((blob) => {
           return blob ? createImageBitmap(blob, { premultiplyAlpha: "none", colorSpaceConversion: "none" }) : null;
@@ -4199,7 +4199,7 @@ var counterside = (() => {
           this.success(success, path, this.textureLoader(image));
         };
         image.onerror = () => {
-          this.error(error, path, `Couldn't load image: ${path}`);
+          this.error(error, path, `Couldn't load image`);
         };
         if (this.downloader.rawDataUris[path])
           path = this.downloader.rawDataUris[path];
@@ -4223,15 +4223,15 @@ var counterside = (() => {
               }
             }, (imagePath, message) => {
               if (!abort)
-                this.error(error, path, `Couldn't load texture atlas ${path} page image: ${imagePath}`);
+                this.error(`Couldn't load texture atlas`);
               abort = true;
             });
           }
         } catch (e) {
-          this.error(error, path, `Couldn't parse texture atlas ${path}: ${e.message}`);
+          this.error(`Couldn't parse texture atlas`);
         }
       }, (status, responseText) => {
-        this.error(error, path, `Couldn't load texture atlas ${path}: status ${status}, ${responseText}`);
+        this.error(`Couldn't load texture atlas`);
       });
     }
     get(path) {
@@ -11572,7 +11572,8 @@ var counterside = (() => {
       if (this.error)
         return;
       if (this.assetManager.hasErrors())
-        this.showError("Error: Assets could not be loaded.\n" + toString(this.assetManager.getErrors()));
+        this.showError("Error: Counterside player could not fetch assets.\n\nNote: This error will display if the current selected skin has no skill fx.");
+        
       let config = this.config;
       let atlas = this.assetManager.require(config.atlasUrl);
       let gl = this.context.gl, anisotropic = gl.getExtension("EXT_texture_filter_anisotropic");

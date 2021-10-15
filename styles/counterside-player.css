@@ -1,6 +1,6 @@
 /** Player **/
 #player-container {
-  height: 700px;
+  height: 100%;
 }
 
 .counterside-player-canvas {
@@ -22,7 +22,7 @@
 .counterside-player * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "PT Sans",Arial,"Helvetica Neue",Helvetica,Tahoma,sans-serif;
+  font-family: "PT Sans", Arial, "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   color: #dddddd;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -174,7 +174,8 @@
   color: #aaa;
 }
 
-.counterside-player-list li.selectable.selected .selectable-text, .counterside-player-list li.selectable:hover .selectable-text {
+.counterside-player-list li.selectable.selected .selectable-text,
+.counterside-player-list li.selectable:hover .selectable-text {
   color: #ddd;
 }
 

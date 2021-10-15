@@ -1,11 +1,187 @@
 @import "./index.scss";
 
-$something: rgba(149, 48, 196, 0.308);
+$skillname-font: 30px;
+$skilltitle-font: 25px;
+$skilldesc-font: 20px;
+$ranktitle-font: 25px;
+$rankdesc-font: 20px;
+$rank-width: 90px;
 
 html {
   nav {
     font-size: 20px;
   }
+}
+
+main {
+  background-color: rgba(34, 34, 34, 0.719);
+}
+
+p {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+#pagetitle {
+  text-shadow: -1px 1px 10px #b834f5;
+}
+
+#rarityimg {
+  margin-right: -11px;
+  margin-left: -11px;
+  background-color: #8207b33f;
+  height: 50px;
+  box-shadow: purple 1px 1px 5px 1px;
+}
+
+#Rarity {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+
+#datagrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #09c;
+  background-color: #3f09553f;
+  margin-right: -11px;
+  margin-left: -11px;
+}
+
+#datagrid > p {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 15px #2c99cc;
+}
+
+#biography {
+  height: 250px;
+  font-size: 15px;
+  color: #07b39b;
+  padding-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  
+}
+
+#biography::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #4d31448e;
+}
+
+#biography::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #4d31448e;
+}
+
+#biography::-webkit-scrollbar-thumb
+{
+	background-color: #385355;	
+}
+
+#divider {
+  width: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+#skintitle {
+  font-size: 25px;
+  text-align: center;
+  color: #ff00d4c7;
+  padding-bottom: 10px;
+  text-shadow: 0 0 15px #f500d1;
+}
+
+
+
+#skinbuttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+#skinbuttons > input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  object-fit: cover;
+  color: #2e292c;
+  box-shadow: 0px 2px 2px 2px;
+  overflow: scroll
+}
+
+#skinbuttons > input:hover {
+  color: #07b39b;
+}
+
+#spritebuttons {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 15px;
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr
+}
+
+#fx {
+  width: 50%;
+  background-color: #461d35;
+  color: #67ffeb;
+  &:hover {
+    background-color: #10405a;
+  }
+}
+
+#sprite {
+  place-self: flex-end;
+  width: 80%;
+  background-color: #2e292c;
+  color: #67ffeb;
+  &:hover {
+    background-color: #1d1f20;
+  }
+}
+
+// #sprite0, #sprite1, #sprite2, #sprite3 {
+//   background-color: #3c4b49;
+//   border-radius: 5%;
+//   color: #1ed617;
+
+//   &:hover {
+//     background-color: #466342;
+//   }
+
+// }
+
+// #skin0, #skin1, #skin2, #skin3 {
+//   display: grid;
+//   grid-template: repeat(4, 1fr);
+// }
+
+.pagetitle {
+  font-size: 50px;
+}
+
+#p_title1 {
+  color: #c94d4d;
+  font-size: 30px;
+  text-shadow: -1px 1px 15px #993535;
+  margin-bottom: 5px;
+}
+
+#p_title2 {
+  color: #07b39b;
+  font-size: 30px;
+  text-shadow: -1px 1px 15px #07b39b;
+  margin-bottom: 5px;
 }
 
 #gridsystem {
@@ -68,86 +244,64 @@ html {
   color: #6fba82;
 }
 
-#col-left {
-  background-color: rgba(0, 0, 0, 0.76);
-  color: aqua;
-  margin-right: 3px;
-  margin-bottom: 3px;
-}
-
 #col-middle {
   background-color: rgba(0, 0, 0, 0.76);
   color: aqua;
   text-align: center;
-  margin-right: 3px;
-  margin-bottom: 3px;
 }
 
 #col-right {
-    margin-right: 1.5px;
-    margin-bottom: 3px;
-    background-color: rgba(0, 0, 0, 0.76);
-    color: $something;
-    box-shadow: 0px 0px 1px 1px;
-  }
+  background-color: rgba(0, 0, 0, 0.76);
+  box-shadow: inset #783641 0px 0px 7px 2px;
+  height: 750px;
+  margin: 7px;
+}
 
 #col-left {
   background-color: rgba(0, 0, 0, 0.76);
   text-align: center;
-  margin-right: 3px;
-  margin-bottom: 3px;
-  height: 700px;
-  color: $something;
-  box-shadow: 0px 0px 1px 1px;
+  height: 750px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
+  background-color: rgba(0, 0, 0, 0.76);
+  margin: 7px;
 }
 
 #col-stats-defensive {
   background-color: rgba(0, 0, 0, 0.76);
-  margin-right: 3px;
-  margin-bottom: 3px;
-  color: $something;
-  box-shadow: 0px 0px 1px 1px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
 }
+
 #col-stats-offensive {
   background-color: rgba(0, 0, 0, 0.76);
-  margin-right: 3px;
-  margin-bottom: 3px;
-  color: $something;
-  box-shadow: 0px 0px 1px 1px;
+  box-shadow: inset #783641 0px 0px 7px 2px;
+  margin: 7px;
 }
 
 
 
 #col_skill1 {
-    color: $something;
-    box-shadow: 0px 0px 1px 1px;
-  margin-right: 1.5px;
-  margin-bottom: 3px;
   background-color: rgba(0, 0, 0, 0.76);
+margin: 7px;
+box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill2 {
-    color: $something;
-    box-shadow: 0px 0px 1px 1px;
-  margin-left: 1.5px;
-  margin-bottom: 3px;
   background-color: rgba(0, 0, 0, 0.76);
+margin: 7px;
+box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill3 {
-    color: $something;
-    box-shadow: 0px 0px 1px 1px;
-  margin-right: 1.5px;
-  margin-bottom: 3px;
   background-color: rgba(0, 0, 0, 0.76);
+margin: 7px;
+box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #col_skill4 {
-    color: $something;
-    box-shadow: 0px 0px 1px 1px;
-  margin-left: 1.5px;
-  margin-bottom: 3px;
   background-color: rgba(0, 0, 0, 0.76);
+margin: 7px;
+box-shadow: inset #783641 0px 0px 7px 2px;
 }
 
 #grid1 {
@@ -178,9 +332,8 @@ html {
   color: rgb(184, 52, 245);
   text-align: center;
   margin-bottom: 5px;
-  margin-right: 2.5px;
-  margin-left: 2.5px;
 }
+
 #col-title:after {
   content: "";
   position: absolute;
@@ -188,17 +341,15 @@ html {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  background: linear-gradient(60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 10s ease alternate infinite;
@@ -209,132 +360,185 @@ html {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
+.skillintro {
+  overflow: auto; // without overflow here, if the "Line 1" and "Line 2" is short then "Next elements" will display below "Line 2" and the image will cover the "Next elements" 
+  padding-top: 10px;
+}
+
+.skillintro2 {
+  float: left; // without float here, if "Line 1" and "Line 2" is long -> text will display both at right and bottom the image
+  padding-top: 10px;
+}
+
+.SkillImage {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 6px;
+}
+
 #BasicAttackName {
   color: rgb(255, 148, 172);
-}
-
-#PassiveSkillName {
-  color: rgb(255, 148, 172);
-}
-
-#SpecialSkillName {
-  color: rgb(255, 148, 172);
-}
-
-#UltimateSkillName {
-  color: rgb(255, 148, 172);
+  font-size: $skillname-font;
 }
 
 #BasicSkillTitle {
   color: rgb(55, 192, 255);
+  font-size: $skilltitle-font;
+}
+
+#BasicSkillDesc {
+  font-size: $skilldesc-font;
+  color: #ffdddd;
+  padding: 2.5%;
+  height: 125px;
+  overflow-y: scroll;
+}
+
+#PassiveSkillName {
+  color: rgb(255, 148, 172);
+  font-size: $skillname-font;
 }
 
 #PassiveSkillTitle {
   color: rgb(255, 212, 71);
-}
-
-#SpecialSkillTitle {
-  color: rgb(55, 192, 255);
-}
-
-#UltimateSkillTitle {
-  color: rgb(183, 0, 255);
-}
-
-#BasicSkillDesc {
-  color: white;
-  padding: 2.5%;
+  font-size: $skilltitle-font;
 }
 
 #PassiveSkillDesc {
-  color: white;
+  color: #ffdddd;
   padding: 2.5%;
+  font-size: $skilldesc-font;
+  height: 125px;
+  overflow-y: scroll;
+}
+
+#SpecialSkillName {
+  font-size: $skillname-font;
+  color: rgb(255, 148, 172);
+}
+
+#SpecialSkillTitle {
+  font-size: $skilltitle-font;
+  color: rgb(55, 192, 255);
 }
 
 #SpecialSkillDesc {
-  color: white;
+  font-size: $skilldesc-font;
+  color: #ffdddd;
   padding: 2.5%;
+  height: 125px;
+  overflow-y: scroll;
+}
+
+#UltimateSkillName {
+  font-size: $skillname-font;
+  color: rgb(255, 148, 172);
+}
+
+#UltimateSkillTitle {
+  font-size: $skilltitle-font;
+  color: rgb(183, 0, 255);
 }
 
 #UltimateSkillDesc {
-  color: white;
+  font-size: $skilldesc-font;
+  color: #ffdddd;
   padding: 2.5%;
+  height: 125px;
+  overflow-y: scroll;
+}
+
+.rank {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgba(0, 0, 0, 0.76);
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#padbottom {
+  padding-bottom: 10px;
 }
 
 .Rank2Title,
 .Rank3Title,
 .Rank4Title,
 .Rank5Title {
-  color: #000;
-  border-radius: 10px;
-  background-color: #ffffffb3;
+  color: #edd1ff;
+  background-color: #585858a1;
   display: block;
-  width: 85px;
   text-align: center;
   font-weight: bold;
   height: 30px;
   position: relative;
-  left: 0%;
+  line-height: 1.2;
+  width: 20%;
+  border-radius: 12px;
+  box-shadow: -1px 1px 1px 0px;
+  font-size: $ranktitle-font;
 }
 
 #Rank2Basic,
 #Rank3Basic,
 #Rank4Basic,
 #Rank5Basic {
-  color: white;
+  color: #c19595;
   padding: 5px;
   position: relative;
   margin: auto;
   width: 97%;
-  display: flex;
-  flex-wrap: wrap;
+  text-shadow: -1px 1px 4px #ed31db;
+  font-size: $rankdesc-font;
 }
 
 #Rank2Passive,
 #Rank3Passive,
 #Rank4Passive,
 #Rank5Passive {
-  color: white;
+  color: #c19595;
   padding: 5px;
   position: relative;
   margin: auto;
   width: 97%;
-  display: flex;
-  flex-wrap: wrap;
+  text-shadow: -1px 1px 4px #ed31db;
+  font-size: $rankdesc-font;
 }
 
 #Rank2Special,
 #Rank3Special,
 #Rank4Special,
 #Rank5Special {
-  color: white;
+  color: #c19595;
   padding: 5px;
   position: relative;
   margin: auto;
   width: 97%;
-  display: flex;
-  flex-wrap: wrap;
+  text-shadow: -1px 1px 4px #ed31db;
+  font-size: $rankdesc-font;
 }
 
 #Rank2Ultimate,
 #Rank3Ultimate,
 #Rank4Ultimate,
 #Rank5Ultimate {
-  color: white;
+  color: #c19595;
   padding: 5px;
   position: relative;
   margin: auto;
   width: 97%;
-  display: flex;
-  flex-wrap: wrap;
+  text-shadow: -1px 1px 4px #ed31db;
+  font-size: $rankdesc-font;
 }
 
 .rank-holder {
@@ -342,8 +546,6 @@ html {
   height: 100%;
   vertical-align: bottom;
 }
-
-/* here comes import of progress bar CSS */
 
 @import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
 
@@ -472,6 +674,7 @@ progress[value] {
   color: royalblue;
   position: relative;
   margin: -10px 0px 0.5em;
+  box-shadow: 0px 0px 10px 1px;
 }
 
 /*
@@ -504,14 +707,12 @@ progress[value]::-webkit-progress-value {
 
 progress[value]::-moz-progress-bar {
   /* Gradient background with Stripes */
-  background-image: -moz-linear-gradient(
-      135deg,
+  background-image: -moz-linear-gradient(135deg,
       transparent,
       transparent 100%,
       rgba(0, 0, 0, 0.1) 33%,
       rgba(0, 0, 0, 0.1) 66%,
-      transparent 100%
-    ),
+      transparent 100%),
     -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
     -moz-linear-gradient(left, #09c, #f44);
   background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -547,20 +748,19 @@ p[data-value]:after {
   content: attr(data-value) "";
   position: absolute;
   right: 0;
+  font-size: 25px;
 }
 
 .atkbar::-webkit-progress-value,
 .critbar::-webkit-progress-value,
 .hitbar::-webkit-progress-value {
   /* Gradient background with Stripes */
-  background-image: -webkit-linear-gradient(
-      135deg,
+  background-image: -webkit-linear-gradient(135deg,
       transparent,
       transparent 100%,
       rgba(0, 0, 0, 0.1) 33%,
       rgba(0, 0, 0, 0.1) 66%,
-      transparent 100%
-    ),
+      transparent 100%),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
     -webkit-linear-gradient(left, #09c, #f44);
 }
@@ -569,14 +769,12 @@ p[data-value]:after {
 .defbar::-webkit-progress-value,
 .evabar::-webkit-progress-value {
   /* Gradient background with Stripes */
-  background-image: -webkit-linear-gradient(
-      135deg,
+  background-image: -webkit-linear-gradient(135deg,
       transparent,
       transparent 100%,
       rgba(0, 0, 0, 0.1) 33%,
       rgba(0, 0, 0, 0.1) 66%,
-      transparent 100%
-    ),
+      transparent 100%),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
     -webkit-linear-gradient(left, #09c, #f44);
 }
@@ -586,3 +784,176 @@ p[data-value]:after {
 /* THE END */
 
 /* here ends import of progress bar CSS */
+
+@media screen and (max-width: 1000px) {
+  #skinbuttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 70px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #skinbuttons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 85px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Rank2Title,
+  .Rank3Title,
+  .Rank4Title,
+  .Rank5Title {
+    width: 70px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #skinbuttons {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 195px;
+  }
+  #col-right {
+    margin: 0px;
+    height: 800px;
+  }
+  
+  #col-left {
+    margin: 0px;
+  }
+  
+  #col-stats-defensive {
+    margin: 0px;
+    margin-top: 5px;
+  }
+  
+  #col-stats-offensive {
+    margin: 0px;
+    margin-top: 5px;
+  }
+  #col_skill1 {
+  margin: 0px;
+  margin-top: 5px;
+  }
+  
+  #col_skill2 {
+  margin: 0px;
+  margin-top: 5px;
+  }
+  
+  #col_skill3 {
+  margin: 0px;
+  margin-top: 5px;
+  }
+  
+  #col_skill4 {
+  margin: 0px;
+  margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .p_title {
+    color: #07b39b;
+    font-size: 30px;
+  }
+
+  p[data-value]:after {
+    font-size: 15px;
+    padding-top: 8px;
+  }
+
+  .SkillImage {
+    width: 70px;
+    height: 70px;
+    margin-right:10px;
+  }
+
+  #BasicAttackName {
+    font-size: 20px;
+  }
+
+  #PassiveSkillName {
+    font-size: 20px;
+  }
+
+  #SpecialSkillName {
+    font-size: 20px;
+  }
+
+  #UltimateSkillName {
+    font-size: 20px;
+  }
+
+  #BasicSkillTitle {
+    font-size: 20px;
+  }
+
+  #PassiveSkillTitle {
+    font-size: 20px;
+  }
+
+  #SpecialSkillTitle {
+    font-size: 20px;
+  }
+
+  #UltimateSkillTitle {
+    font-size: 20px;
+  }
+
+  #BasicSkillDesc {
+    font-size: 15px;
+  }
+
+  #PassiveSkillDesc {
+    font-size: 15px;
+  }
+
+  #SpecialSkillDesc {
+    font-size: 15px;
+  }
+
+  #UltimateSkillDesc {
+    font-size: 15px;
+  }
+
+  .Rank2Title,
+  .Rank3Title,
+  .Rank4Title,
+  .Rank5Title {
+    width: 50px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  #Rank2Basic,
+  #Rank3Basic,
+  #Rank4Basic,
+  #Rank5Basic {
+    font-size: 15px;
+  }
+
+  #Rank2Passive,
+  #Rank3Passive,
+  #Rank4Passive,
+  #Rank5Passive {
+    font-size: 15px;
+  }
+
+  #Rank2Special,
+  #Rank3Special,
+  #Rank4Special,
+  #Rank5Special {
+    font-size: 15px;
+  }
+
+  #Rank2Ultimate,
+  #Rank3Ultimate,
+  #Rank4Ultimate,
+  #Rank5Ultimate {
+    font-size: 15px;
+  }
+}

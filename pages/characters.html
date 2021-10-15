@@ -39,126 +39,165 @@
     </nav>
     
     <main>
-      <div id="container_char">
-        <h1 class="char-title">
-          Counter:<span class="countersidechars">Side</span> Characters
-        </h1>
 
-        <input id="all" type="radio" name="team" checked />
-        <label id="labelpos" for="all">All</label>
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md" id="container_char">
 
-        <input id="counter" type="radio" name="team" />
-        <label for="counter">Counter</label>
+            <div id="col-md5" id="buttons">
+              <h1 class="char-title">
+                Counter:<span class="countersidechars">Side</span> Characters
+              </h1>
 
-        <input id="soldier" type="radio" name="team" />
-        <label for="soldier">Soldier</label>
+              <!-- type -->
+              
+              <input id="all-type" type="radio" name="type" checked />
+              <label for="all-type">All</label>
+      
+              <input id="counter" type="radio" name="type" />
+              <label for="counter">Counter</label>
+      
+              <input id="soldier" type="radio" name="type" />
+              <label for="soldier">Soldier</label>
+      
+              <input id="mech" type="radio" name="type" />
+              <label for="mech">Mech</label>
+      
+              <input id="awaken" type="radio" name="type" />
+              <label for="awaken">Awaken</label>
 
-        <input id="mech" type="radio" name="team" />
-        <label for="mech">Mech</label>
+              <input id="none-type" type="radio" name="type" />
+              <label for="none-type">None</label>
 
-        <input id="awaken" type="radio" name="team" />
-        <label for="awaken">Awaken</label>
+              <!-- cost -->
 
-        <br />
-        <ul class="characters">
-          <li id="yoo_mina" data-teams="counter all">
-            <h2>Yoo Mina</h2>
-            <a href="../Characters/Counter/yoo_mina.html">
-              <img src="../assets/char_icons/CA_YOO_MI_NA.png" alt="" />
-            </a>
-          </li>
-          <li id="hilde" data-teams="counter all">
-            <h2>Hilde</h2>
-            <a href="../Characters/Counter/hilde.html">
-              <img src="../assets/char_icons/HILDE.png" alt="" />
-            </a>
-          </li>
-          <li id="joo_shiyoon" data-teams="counter all">
-            <h2>Joo Shiyoon</h2>
-            <a href="../Characters/Counter/joo_shiyoon.html">
-              <img src="../assets/char_icons/OO_SHI_YOON.png" alt="" />
-            </a>
-          </li>
-          <li id="seo_yoon" data-teams="counter all">
-            <h2>Seo Yoon</h2>
-            <a href="../Characters/Counter/seo_yoon.html">
-              <img src="../assets/char_icons/LT_SEO_YOON.png" alt="" />
-            </a>
-          </li>
-          <li id="eujin" data-teams="counter all">
-            <h2>Eujin</h2>
-            <a href="../Characters/Counter/eujin.html">
-              <img src="../assets/char_icons/LT_YOO_JIN.png" alt="" />
-            </a>
-          </li>
-          <li id="xiao_lin" data-teams="counter all">
-            <h2>Xiao Lin</h2>
-            <a href="../Characters/Counter/xiao_lin.html">
-              <img src="../assets/char_icons/LT_XIAOLIN.png" alt="" />
-            </a>
-          </li>
-          <li id="kim_sobin" data-teams="counter all">
-            <h2>Kim Sobin</h2>
-            <a href="../Characters/Counter/kim_sobin.html">
-              <img src="../assets/char_icons/LT_KIM_SOBIN.png" alt="" />
-            </a>
-          </li>
-          <li id="rifleman" data-teams="soldier all">
-            <h2>Rifleman</h2>
-            <a href="../Characters/Soldier/rifleman.html">
-              <img src="../assets/char_icons/S_SL_RIFLE.png" alt="" />
-            </a>
-          </li>
-          <li id="shieldman" data-teams="soldier all">
-            <h2>Shieldman</h2>
-            <a href="../Characters/Soldier/shieldman.html">
-              <img src="../assets/char_icons/S_SL_SHIELD.png" alt="" />
-            </a>
-          </li>
-          <li id="sniper" data-teams="soldier all">
-            <h2>Sniper</h2>
-            <a href="../Characters/Soldier/sniper.html">
-              <img src="../assets/char_icons/S_SL_SNIPER.png" alt="" />
-            </a>
-          </li>
-          <li id="suppressor" data-teams="soldier all">
-            <h2>Suppressor</h2>
-            <a href="../Characters/Soldier/suppressor.html">
-              <img src="../assets/char_icons/S_SL_SHOTGUN.png" alt="" />
-            </a>
-          </li>
-          <li id="sparrow" data-teams="mech all">
-            <h2>Sparrow</h2>
-            <a href="../Characters/Mecha/sparrow.html">
-              <img src="../assets/char_icons/M_SL_AIR_FIGHTER.png" alt="" />
-            </a>
-          </li>
-          <li id="woodpecker" data-teams="mech all">
-            <h2>Woodpecker</h2>
-            <a href="../Characters/Mecha/woodpecker.html">
-              <img src="../assets/char_icons/M_SL_AIR_BOMBER.png" alt="" />
-            </a>
-          </li>
-          <li id="hound" data-teams="mech all">
-            <h2>Hound</h2>
-            <a href="../Characters/Mecha/hound.html">
-              <img src="../assets/char_icons/M_SL_TANK.png" alt="" />
-            </a>
-          </li>
-          <li id="rhino" data-teams="mech all">
-            <h2>Rhino</h2>
-            <a href="../Characters/Mecha/rhino.html">
-              <img src="../assets/char_icons/M_SL_HEAVY_TANK.png" alt="" />
-            </a>
-          </li>
-          <li id="buzzard" data-teams="mech all">
-            <h2>Buzzard</h2>
-            <a href="../Characters/Mecha/buzzard.html">
-              <img src="../assets/char_icons/M_SL_AIR_HELI.png" alt="" />
-            </a>
-          </li>
-        </ul>
+              <input id="all-cost" type="radio" name="cost" checked />
+              <label for="all-cost">All</label>
+      
+              <input id="1" type="radio" name="cost" />
+              <label for="1">1</label>
+      
+              <input id="2" type="radio" name="cost" />
+              <label for="2">2</label>
+      
+              <input id="3" type="radio" name="cost" />
+              <label for="3">3</label>
+      
+              <input id="4" type="radio" name="cost" />
+              <label for="4">4</label>
+
+              <input id="5" type="radio" name="cost" />
+              <label for="5">5</label>
+
+              <input id="6" type="radio" name="cost" />
+              <label for="6">6</label>
+
+              <input id="none" type="radio" name="cost" />
+              <label for="none">None</label>
+
+              <ul class="characters">
+                <li id="yoo_mina" data-teams="counter all-type 4 cost">
+                  <h2>Yoo Mina</h2>
+                  <a href="../Characters/Counter/yoo_mina.html">
+                    <img src="../assets/char_icons/CA_YOO_MI_NA.png" alt="" />
+                  </a>
+                </li>
+                <li id="hilde" data-teams="counter all-type">
+                  <h2>Hilde</h2>
+                  <a href="../Characters/Counter/hilde.html">
+                    <img src="../assets/char_icons/HILDE.png" alt="" />
+                  </a>
+                </li>
+                <li id="joo_shiyoon" data-teams="counter all-type">
+                  <h2>Joo Shiyoon</h2>
+                  <a href="../Characters/Counter/joo_shiyoon.html">
+                    <img src="../assets/char_icons/OO_SHI_YOON.png" alt="" />
+                  </a>
+                </li>
+                <li id="seo_yoon" data-teams="counter all-type">
+                  <h2>Seo Yoon</h2>
+                  <a href="../Characters/Counter/seo_yoon.html">
+                    <img src="../assets/char_icons/LT_SEO_YOON.png" alt="" />
+                  </a>
+                </li>
+                <li id="eujin" data-teams="counter all-type">
+                  <h2>Eujin</h2>
+                  <a href="../Characters/Counter/eujin.html">
+                    <img src="../assets/char_icons/LT_YOO_JIN.png" alt="" />
+                  </a>
+                </li>
+                <li id="xiao_lin" data-teams="counter all-type">
+                  <h2>Xiao Lin</h2>
+                  <a href="../Characters/Counter/xiao_lin.html">
+                    <img src="../assets/char_icons/LT_XIAOLIN.png" alt="" />
+                  </a>
+                </li>
+                <li id="kim_sobin" data-teams="counter all-type">
+                  <h2>Kim Sobin</h2>
+                  <a href="../Characters/Counter/kim_sobin.html">
+                    <img src="../assets/char_icons/LT_KIM_SOBIN.png" alt="" />
+                  </a>
+                </li>
+                <li id="rifleman" data-teams="soldier all-type">
+                  <h2>Rifleman</h2>
+                  <a href="../Characters/Soldier/rifleman.html">
+                    <img src="../assets/char_icons/S_SL_RIFLE.png" alt="" />
+                  </a>
+                </li>
+                <li id="shieldman" data-teams="soldier all-type">
+                  <h2>Shieldman</h2>
+                  <a href="../Characters/Soldier/shieldman.html">
+                    <img src="../assets/char_icons/S_SL_SHIELD.png" alt="" />
+                  </a>
+                </li>
+                <li id="sniper" data-teams="soldier all-type">
+                  <h2>Sniper</h2>
+                  <a href="../Characters/Soldier/sniper.html">
+                    <img src="../assets/char_icons/S_SL_SNIPER.png" alt="" />
+                  </a>
+                </li>
+                <li id="suppressor" data-teams="soldier all-type">
+                  <h2>Suppressor</h2>
+                  <a href="../Characters/Soldier/suppressor.html">
+                    <img src="../assets/char_icons/S_SL_SHOTGUN.png" alt="" />
+                  </a>
+                </li>
+                <li id="sparrow" data-teams="mech all-type">
+                  <h2>Sparrow</h2>
+                  <a href="../Characters/Mecha/sparrow.html">
+                    <img src="../assets/char_icons/M_SL_AIR_FIGHTER.png" alt="" />
+                  </a>
+                </li>
+                <li id="woodpecker" data-teams="mech all-type">
+                  <h2>Woodpecker</h2>
+                  <a href="../Characters/Mecha/woodpecker.html">
+                    <img src="../assets/char_icons/M_SL_AIR_BOMBER.png" alt="" />
+                  </a>
+                </li>
+                <li id="hound" data-teams="mech all-type">
+                  <h2>Hound</h2>
+                  <a href="../Characters/Mecha/hound.html">
+                    <img src="../assets/char_icons/M_SL_TANK.png" alt="" />
+                  </a>
+                </li>
+                <li id="rhino" data-teams="mech all-type">
+                  <h2>Rhino</h2>
+                  <a href="../Characters/Mecha/rhino.html">
+                    <img src="../assets/char_icons/M_SL_HEAVY_TANK.png" alt="" />
+                  </a>
+                </li>
+                <li id="buzzard" data-teams="mech all-type">
+                  <h2>Buzzard</h2>
+                  <a href="../Characters/Mecha/buzzard.html">
+                    <img src="../assets/char_icons/M_SL_AIR_HELI.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+
     </main>
 
     <footer

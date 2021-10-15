@@ -1,16 +1,25 @@
-let charname, rarity, affiliation, faction, cost, type, role, target, atk, crit, hit, hp, def, eva = [];
+let Name, Rarity, Movement, Faction, Cost, Type, Role, Target, atk, crit, hit, hp, def, eva, bio = [];
 
 let Rank2Basic, Rank3Basic, Rank4Basic, Rank5Basic = "";
 let Rank2Passive, Rank3Passive, Rank4Passive, Rank5Passive = "";
 let Rank2Special, Rank3Special, Rank4Special, Rank5Special = "";
 let Rank2Ultimate, Rank3Ultimate, Rank4Ultimate, Rank5Ultimate = "";
 
-let filename = document.title;
+let biography = ["biography"];
 
 let BasicAttackName = "";
 let PassiveSkillName = "";
 let SpecialSkillName = "";
 let UltimateSkillName = "";
+
+let NameAdd = document.getElementById("Name");
+let RarityAdd = document.getElementById("Rarity");
+let MovementAdd = document.getElementById("Movement");
+let FactionAdd = document.getElementById("Faction");
+let TargetAdd = document.getElementById("Target");
+let TypeAdd = document.getElementById("Type");
+let RoleAdd = document.getElementById("Role");
+let CostAdd = document.getElementById("Cost");
 
 let BasicAttackNameAdd = document.getElementById("BasicAttackName");
 let PassiveSkillNameAdd = document.getElementById("PassiveSkillName");
@@ -42,7 +51,21 @@ let Rank3AddUltimate = document.getElementById("Rank3Ultimate");
 let Rank4AddUltimate = document.getElementById("Rank4Ultimate");
 let Rank5AddUltimate = document.getElementById("Rank5Ultimate");
 
+let BioAdd = document.getElementById("biography");
+
 $( document ).ready(function() {
+
+    fetch("../data/bio.json")
+    .then(function (resp) {
+        return resp.json();
+    })
+    .then(function(data) {
+        
+        bio = data[biography][0][uid];
+
+        BioAdd.innerText += bio;
+
+    })
 
     fetch("../data/chars.json")
     .then(function(resp) {
@@ -50,52 +73,60 @@ $( document ).ready(function() {
     })
     .then(function(data) {
 
-        charname = data[filename][0].Name;
-        rarity = data[filename][0].Rarity;
-        affiliation = data[filename][0].Affiliation;
-        faction = data[filename][0].Faction;
-        type = data[filename][0].Type;
-        role = data[filename][0].Role;
-        target = data[filename][0].Target;
-        cost = data[filename][0].Cost;
+        Name = data[pid][0].Name;
+        Rarity = data[pid][0].Rarity;
+        Movement = data[pid][0].Movement;
+        Faction = data[pid][0].Faction;
+        Type = data[pid][0].Type;
+        Role = data[pid][0].Role;
+        Target = data[pid][0].Target;
+        Cost = data[pid][0].Cost;
         
-        atk = data[filename][0].Attack;
-        crit = data[filename][0].Critical;
-        hit = data[filename][0].Hit;
+        atk = data[pid][0].Attack;
+        crit = data[pid][0].Critical;
+        hit = data[pid][0].Hit;
 
-        hp = data[filename][0].Health;
-        def = data[filename][0].Defense;
-        eva = data[filename][0].Evasion;
+        hp = data[pid][0].Health;
+        def = data[pid][0].Defense;
+        eva = data[pid][0].Evasion;
 
-        BasicAttackName = data[filename][0].BasicSkillName;
-        PassiveSkillName = data[filename][0].PassiveSkillName;
-        SpecialSkillName = data[filename][0].SpecialSkillName;
-        UltimateSkillName = data[filename][0].UltimateSkillName;
+        BasicAttackName = data[pid][0].BasicSkillName;
+        PassiveSkillName = data[pid][0].PassiveSkillName;
+        SpecialSkillName = data[pid][0].SpecialSkillName;
+        UltimateSkillName = data[pid][0].UltimateSkillName;
 
-        BasicSkillDesc = data[filename][0].BasicSkillDesc;
-        PassiveSkillDesc = data[filename][0].PassiveSkillDesc;
-        SpecialSkillDesc = data[filename][0].SpecialSkillDesc;
-        UltimateSkillDesc = data[filename][0].UltimateSkillDesc;
+        BasicSkillDesc = data[pid][0].BasicSkillDesc;
+        PassiveSkillDesc = data[pid][0].PassiveSkillDesc;
+        SpecialSkillDesc = data[pid][0].SpecialSkillDesc;
+        UltimateSkillDesc = data[pid][0].UltimateSkillDesc;
 
-        Rank2Basic = data[filename][0].Rank2Basic;
-        Rank3Basic = data[filename][0].Rank3Basic;
-        Rank4Basic = data[filename][0].Rank4Basic;
-        Rank5Basic =  data[filename][0].Rank5Basic;
+        Rank2Basic = data[pid][0].Rank2Basic;
+        Rank3Basic = data[pid][0].Rank3Basic;
+        Rank4Basic = data[pid][0].Rank4Basic;
+        Rank5Basic =  data[pid][0].Rank5Basic;
 
-        Rank2Passive = data[filename][0].Rank2Passive;
-        Rank3Passive = data[filename][0].Rank3Passive;
-        Rank4Passive = data[filename][0].Rank4Passive;
-        Rank5Passive =  data[filename][0].Rank5Passive;
+        Rank2Passive = data[pid][0].Rank2Passive;
+        Rank3Passive = data[pid][0].Rank3Passive;
+        Rank4Passive = data[pid][0].Rank4Passive;
+        Rank5Passive =  data[pid][0].Rank5Passive;
 
-        Rank2Special = data[filename][0].Rank2Special;
-        Rank3Special = data[filename][0].Rank3Special;
-        Rank4Special = data[filename][0].Rank4Special;
-        Rank5Special =  data[filename][0].Rank5Special;
+        Rank2Special = data[pid][0].Rank2Special;
+        Rank3Special = data[pid][0].Rank3Special;
+        Rank4Special = data[pid][0].Rank4Special;
+        Rank5Special =  data[pid][0].Rank5Special;
 
-        Rank2Ultimate = data[filename][0].Rank2Ultimate;
-        Rank3Ultimate = data[filename][0].Rank3Ultimate;
-        Rank4Ultimate = data[filename][0].Rank4Ultimate;
-        Rank5Ultimate =  data[filename][0].Rank5Ultimate;
+        Rank2Ultimate = data[pid][0].Rank2Ultimate;
+        Rank3Ultimate = data[pid][0].Rank3Ultimate;
+        Rank4Ultimate = data[pid][0].Rank4Ultimate;
+        Rank5Ultimate =  data[pid][0].Rank5Ultimate;
+
+        RarityAdd.src = "../../assets/images/"+Rarity+".png"
+        MovementAdd.textContent += Movement;
+        FactionAdd.textContent += Faction;
+        TypeAdd.textContent += Type;
+        RoleAdd.textContent += Role;
+        TargetAdd.textContent += Target;
+        CostAdd.textContent += Cost;
 
         BasicAttackNameAdd.textContent += BasicAttackName;
         PassiveSkillNameAdd.textContent += PassiveSkillName;
@@ -127,12 +158,13 @@ $( document ).ready(function() {
         Rank4AddUltimate.textContent += Rank4Ultimate;
         Rank5AddUltimate.textContent += Rank5Ultimate;
 
-    var max_atk = 8000;
-    var max_crit = 1500;
-    var max_hit = 2500;
+    // Max stats last check: 10-14 //
 
-    var max_hp = 80000;
-    var max_def = 1500;
+    var max_hp = 83000; 
+    var max_atk = 8000;
+    var max_def = 3200;
+    var max_crit = 1300;
+    var max_hit = 2200;
     var max_eva = 1500;
 
     var atkwidthcalc = 0;
